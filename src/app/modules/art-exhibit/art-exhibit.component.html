@@ -1,0 +1,14 @@
+<table [ngStyle]="{fontWeight: 'bold'}">
+    <tr>
+        <th [ngStyle]="{'color': 'blue'}">TITLE</th>
+        <th [ngStyle]="{'color': 'brown'}">CREATOR</th>
+        <th [ngStyle]="{'color': 'green'}">CREATION DATE</th>
+    </tr>
+    <tr *ngFor="let art of artDetails">
+        <td [ngStyle]="{'color' : 'blue'}">
+            <a href="{{art.url}}" target="_blank">{{art.title}}</a>
+        </td>
+        <td [ngStyle]="{'color': 'brown'}">{{art.creator}}</td>
+        <td [ngStyle]="{'color': 'green'}">{{art.creation_date}}</td>
+    </tr>
+</table>

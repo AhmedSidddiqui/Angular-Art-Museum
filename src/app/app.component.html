@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@2
+0..48,100..700,0..1,-50..200" />
+
+<app-header [myDetails]='myDetails'></app-header>
+
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon color="primary">favorite</mat-icon>
+            All Art on Exhibit
+        </ng-template>
+        <app-art-exhibit [artDetails]="art"></app-art-exhibit>
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon color="accent">list</mat-icon>
+            Art by Culture
+        </ng-template>
+        <app-art-culture [artDetails]="art" [culturesFeatured]="cultures"></app-art-culture>
+    </mat-tab>
+</mat-tab-group>
+
+<app-footer></app-footer>

@@ -1,0 +1,6 @@
+<h3>Click a button to see that Cultures's Art</h3>
+<div>
+    <button *ngFor="let cult of culturesFeatured; let i = index" mat-fab color="primary" (click)="showCulture(i)">{{cult.culture}}</button>
+</div>
+
+<div class="output" [innerHTML]="selectedCultureArt"></div>

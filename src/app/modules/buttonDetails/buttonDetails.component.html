@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>My Information</h2>
+
+<mat-dialog-content>
+    <p>Name : {{data.A4Name}}</p>
+    <p>Email : {{data.A4Email}}</p>
+    <p>Login name : {{data.A4Login}}</p>
+    <p>ID : {{data.A4ID}}</p>
+    <p>Photo : </p>
+    <img id="G5" src="assets/images/Gear5.png" height="200px" width="150px">
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="onOkayClicked()">Okay</button>
+</mat-dialog-actions>

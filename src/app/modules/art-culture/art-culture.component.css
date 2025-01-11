@@ -1,0 +1,12 @@
+.output{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+h3{
+    text-align: center;
+    color: cadetblue;
+    font-family: arial black;
+    background-color: crimson;
+    font-style:italic
+}
